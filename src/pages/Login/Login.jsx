@@ -1,4 +1,4 @@
-import LoginButton from "../../components/LoginButton";
+import LoginButton from "@/components/LoginButton";
 
 const Login = () => {
   return(
@@ -10,12 +10,13 @@ const Login = () => {
         </div>
         <div className="mb-4">
           <label htmlFor="password" className="block text-sm font-medium text-gray-700">密碼:</label>
-          <input type="text" id="password" className="mt-1 block w-full rounded-md border border-gray-400 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" />
+          <input type="password" id="password" className="mt-1 block w-full rounded-md border border-gray-400 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" />
         </div>
         <div className="flex justify-end">
           <LoginButton />
         </div>
-        <div className="mt-4 text-center">
+        <div className="mt-4 text-center flex justify-center gap-4">
+          <a href="#" className="text-sm text-indigo-600 hover:underline">註冊帳號</a>
           <a href="#" className="text-sm text-indigo-600 hover:underline">忘記密碼?</a>
         </div>
       </div>
